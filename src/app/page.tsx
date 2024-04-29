@@ -1,5 +1,6 @@
 import React from "react";
+import FrontPage from '@/components/Rafael/FrontPage';
 
 export default function Home() {
-  return <h1 className="bg-danger text-white ">Hola Mundo!</h1>
+  return <FrontPage/>
 }
