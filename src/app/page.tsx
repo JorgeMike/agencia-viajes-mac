@@ -9,12 +9,16 @@ export default function Home() {
         <Navbar
           Title="AirMAC"
           HomeText="Home"
-          SearchText="Busque su destino"
+          SearchText="Search your destiny"
           Buttontext="Stays"
           image="https://i.pinimg.com/736x/55/a3/5a/55a35a4a9676243cc55b3fd8faed896b.jpg"
         />
       </div>
-      <FrontPage />
+      <FrontPage 
+        title="AirMAC"
+        description="Find your ideal destination with us"
+        image="lugares-turisticos-los-cabos.jpg"
+      />
       <Carousel/>
     </div>
   );
