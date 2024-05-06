@@ -1,5 +1,8 @@
+'use client'
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { Component } from "react";
-import {FaHome, FaPlane, FaHotel } from "react-icons/fa";
+import { FaHome, FaPlane, FaHotel } from "react-icons/fa";
 
 interface NavbarProps {
   Title: string;
@@ -9,6 +12,16 @@ interface NavbarProps {
   image: string;
 }
 export default function Navbar(props: NavbarProps) {
+  const router = useRouter()
+
+const handleOnClick = () => {
+  console.log("Boton oprimido")
+  setTimeout(() => {
+    console.log("Esperando")
+    router.push("/stays")
+  }, 10000)
+}
+  
   return (
     <div className="w-100 ">
       <nav
@@ -31,17 +44,17 @@ export default function Navbar(props: NavbarProps) {
             id="navbarText"
           >
             <div className="collapse navbar-collapse" id="navbarScroll">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
 
               <ul className="navbar-nav me-auto mb-2 navbar-nav-scroll mb-lg-0 justify-content-center w-100 align-items-center ">
                 <li className="nav-item">
@@ -51,31 +64,31 @@ export default function Navbar(props: NavbarProps) {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link href={"/destinations"} className="nav-link">
                     <FaPlane />
-                    Flights
-                  </a>
+                    Destinations
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <span className="nav-link" onClick={handleOnClick}>
                     <FaHotel />
                     {props.Buttontext}
-                  </a>
+                  </span>
                 </li>
               </ul>
             </div>
-              </div>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder={props.SearchText}
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+          </div>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder={props.SearchText}
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </nav>
     </div>
