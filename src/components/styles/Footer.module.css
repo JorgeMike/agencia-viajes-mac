@@ -1,0 +1,205 @@
+.footer{
+    width: 100%;
+    height: 350px;
+    background: #222;
+    display: flex;
+    padding: 20px 15px;
+}
+
+/*NOSOTROS*/
+
+.title{
+    color: #CCC;
+}
+
+.p_content{
+    color: white;
+}
+
+.footer_us{
+width: 30%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.us_links{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer_us a{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.footer_us a:hover{
+    transform: scale(1.3);
+    background: #333;
+}
+
+.footer_us p{
+    padding: 0 12px;
+    text-align: center;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+
+/*ENLACES SUGERIDOS*/
+.footer_link{
+ width: 20%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ padding: 5px 0;
+}
+
+.footer_link h2{
+    width: 70%;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer_link a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer_link a:hover{
+    color: #4dafca;
+}
+
+
+/*TIENDA*/
+
+.footer_shop{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+   }
+   
+   .footer_shop h2{
+       width: 70%;
+       font-size: 25px;
+       color:white;
+       text-align: center;
+       text-transform: uppercase;
+   }
+   
+   .footer_shop a{
+       text-decoration: none;
+       color: white;
+       transition: all 0.3s;
+   }
+   
+   .footer_shop a:hover{
+       color: #4dafca;
+   }
+
+/*CONTACTOS*/
+
+
+
+.footer_contact{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_contact h2{
+    color: white;
+}
+
+.contact_map{
+    display: flex;
+    color:white;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.contact_map .icon{
+    margin-top: 10px;
+}
+
+.contact_map p{
+    width: 80%;
+    font-size: 15px;
+}
+
+.contact_map{
+    width: 100%;
+    height: 60px;
+}
+
+
+
+.contact_tel{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tel_number{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.tel_number a{
+    width: 50%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.tel_number a:hover{
+    color: #4dafca;
+}
+
+.contact_email{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_email a{
+    width: 75%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+
+.contact_email a:hover{
+    color: #4dafca;
+}
