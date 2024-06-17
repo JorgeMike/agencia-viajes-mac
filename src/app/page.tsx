@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "@/components/Layout/Navbar";
 import FrontPage from "@/components/Rafael/FrontPage";
 import Carousel from "@/components/Layout/destinations";
-import Destinys from "@/components/David/Destinys";
-
+import MainCountry from "@/components/David/MainCountry";
+import Footer from "@/components/David/Footer";
 
 export default function Home() {
   return (
@@ -24,25 +24,22 @@ export default function Home() {
       />
       <Carousel/>
 
-    <Destinys
-      images={
-        [
-          {url:"/IMG/bento1.jpg",resort:'Cancún',description:'Cancun is a city in Mexico located on the Yucatan Peninsula bordering the Caribbean Sea and known for its beaches, numerous resorts and nightlife.',buton:'Read More'},
-
-          {url:"/IMG/bento2.jpg",resort:'Questionnaire',description:'Take a questionnaire to identify the best destination for you vacations',buton:'Read More'},
-
-          {url:"/IMG/bento3.jpg",resort:'Acapulco',description:"It is known for its nightlife and beache.",buton:'Read More'},
-
-          {url:"/IMG/bento4.jpg",resort:'Londres',description:"Capital of England and the United Kingdom.",buton:'Read More'},
-
-          {url:"/IMG/bento5.jpg",resort:'Hong Kong',description:"Hong Kong is an autonomous territory and former British colony in southeastern China. Its active, densely populated urban center is a major port and global financial center with a skyscraper-filled landscape.",buton:'Read More'},
-          
-          {url:"/IMG/bento6.jpg",resort:'Las Maldivas',description:"Maldives is a tropical country in the Indian Ocean encompassing 26 ring-shaped atolls that are made up of more than 1,000 coral islands.",buton:'Read More'}
-        ]
-      
-      }
-    />
-      
+      <MainCountry
+        images={
+          [
+            {resort:'Cancún',desription:'Cancun is a city in Mexico located on the Yucatan Peninsula bordering the Caribbean Sea and known for its beaches, numerous resorts and nightlife.'},
+            {resort:'France',desription:'France, in Western Europe, encompasses medieval cities, Alpine villages and Mediterranean beaches.'},
+            {resort:'Acapulco',desription:'Acapulco, a beach resort on Mexico Pacific coast, sits on a large bay lined with high-rise buildings and the mountains of the Sierra Madre del Sur.'},
+            {resort:'England',desription:'England, the birthplace of Shakespeare and The Beatles, is a country in the British Isles that borders Scotland and Wales'},
+            {resort:'China',desription:'Hong Kong is an autonomous territory and former British colony in southeast China'},
+            {resort:'Argentina',desription:'Argentina is a large South American country with terrain that includes the Andes mountains, glacial lakes and grasslands in the Pampas, the traditional grazing land of its famous cattle.'}
+            
+          ]
+        }
+      />
+    
+    
+    <Footer/>
       
     </div>
 
