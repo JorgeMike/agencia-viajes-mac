@@ -4,6 +4,7 @@ import FrontPage from "@/components/Rafael/FrontPage";
 import Carousel from "@/components/Layout/destinations";
 import MainCountry from "@/components/David/MainCountry";
 import Footer from "@/components/David/Footer";
+import Main from '@/components/David/Main';
 
 export default function Home() {
   return (
@@ -22,6 +23,13 @@ export default function Home() {
         description="Find your ideal destination with us"
         image="lugares-turisticos-los-cabos.jpg"
       />
+
+    <Main
+    url='/IMG/img_main.jpg'
+    text='Airmac is a travel agency specialized in taking you to the most incredible countries in the world, with the best beaches, hotels and transportation.
+    It is necessary that you complete a brief questionnaire in order to provide you with the best destination with the best price:'
+    />
+
       <Carousel/>
 
       <MainCountry
